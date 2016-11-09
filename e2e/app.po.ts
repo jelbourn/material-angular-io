@@ -1,11 +1,5 @@
-import { browser, element, by } from 'protractor';
+import {browser} from 'protractor';
 
-export class AngularIoV42Page {
-  navigateTo() {
-    return browser.get('/');
-  }
+export class MaterialDocsAppPage {
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
-  }
 }

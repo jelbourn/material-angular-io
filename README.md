@@ -1,10 +1,4 @@
-# angular.io v42
-
-Proof of concept for angular.io developed for decent performance even on slow networks.
-
-Uses prerendering and AOT to minimize the time-to-first-frame and payloadsize.
-
-Note: this is not a fully featured app. Lots of stuff is missing + CSS and images are a known bottleneck.
+# Angular Material Docs Site
 
 ## Preview
 https://angular-io-v42.firebaseapp.com/

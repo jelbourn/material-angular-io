@@ -1,4 +1,9 @@
 'use strict';
+
+
+// TODO: re-address this script once there is static document loading.
+
+
 const fs = require('fs');
 const path = require('path');
 const fse = require('fs-extra');
@@ -30,8 +35,9 @@ function chunkArray(arr, numChunks) {
   return chunkedArray;
 }
 
-const docsUrls = getAllFiles(path.resolve('src/assets/documents/'))
-  .map(f => `http://localhost:4201/${path.relative('src/assets/documents/', f).replace(/(index)?\.html$/, '')}`);
+// const docsUrls = getAllFiles(path.resolve('src/assets/documents/'))
+//   .map(f => `http://localhost:4201/${path.relative('src/assets/documents/', f).replace(/(index)?\.html$/, '')}`);
+const docsUrls = [];
 const chunked = chunkArray(docsUrls, 10);
 
 fse.removeSync('tmp/prerender-specs');
